@@ -44,8 +44,10 @@ INSTALLED_APPS = [
     #third party apps
     'rest_framework',
     'django_filters',
+    'drf_spectacular',
     #my apps
     'manage_clients',
+    'documemntation',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +131,16 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Django REST Framework configuration
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+# drf-spectacular configuration
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Customer Purchases API',
+    'DESCRIPTION': 'API para gestión de compras de clientes',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+}

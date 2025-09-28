@@ -1,9 +1,3 @@
-# customer_purchases
-A tool for its support team to look up clients by their ID number, in order to speed up calls and build loyalty with the best customers.
-# higiapp
-Aplicación web creada desde el backend para gestionar ventas de productos de higiene personal.
-
-# stack
 Aplicación web creada a través del framework Django, a continuación se detallan las primeras acciones con el proyecto, después de clonarlo
 
 ## 1. Crear un entorno virtual (venv)
